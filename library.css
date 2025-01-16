@@ -1,0 +1,122 @@
+/*Padding/Margin Note: 20/15/10*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #e6e6e6ff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 3px solid gray;
+}
+h1 {
+  flex: 1;
+  /*text-align: center;*/
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#lang-nav {
+  white-space: nowrap;
+}
+#lang-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  font-weight: bold;
+}
+#lang-nav li {
+  display: inline-block;
+  font-size: 120%;
+  margin: 0 3px;
+}
+/*#lang-nav li:not(:last-child)::after {
+  content: "|";
+  margin-left: 5px;
+}*/
+#lang-nav a {
+  text-decoration: none;
+}
+main {
+  display: grid;
+  /*grid-template: auto / auto auto auto auto;*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 15px;
+  max-width:100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+main section {
+  background-color: #f9f9f9ff;
+  border-left: 3px solid gray;
+  border-bottom: 3px solid gray;
+  padding: 10px;
+}
+figure {
+  margin: 16px 0; /*top-bot left-right*/
+}
+figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; /*maintain aspect ratio*/
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr); /*Tab = 2 columns*/
+  }
+}
+@media (max-width: 480px) {
+  main {
+    grid-template-columns: 1fr; /*Mobile = 1 column*/
+  }
+}
+#page-nav {
+  text-align: center;
+  background-color: white;
+  padding: 10px 20px;
+}
+#page-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#page-nav li {
+  display: inline-block;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 0 10px;
+}
+#page-nav a {
+  text-decoration: none;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 15px;
+  max-width:100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ecececff;
+  border-top: 3px solid gray;
+}
+footer * {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer div:first-of-type {
+    grid-column: span 2;
+  }
+}
