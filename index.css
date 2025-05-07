@@ -124,9 +124,9 @@ form > fieldset {
 }
 form > div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 #fieldset-job {
   grid-column: 2;
@@ -147,7 +147,7 @@ fieldset {
   flex-direction: row;
   gap: 0.3em;
 }
-#submit-button {
+.submit-reset {
   background-color: #f2f2f2ff;
   font-size: large;
   padding: 0.5em;
@@ -157,8 +157,8 @@ fieldset {
   border-left: none;
   cursor: pointer;
 }
-#submit-button:hover,
-#submit-button:active {
+.submit-reset:hover,
+.submit-reset:active {
   background-color: white;
   border-top: 3px solid gray;
   border-right: 3px solid gray;
