@@ -20,10 +20,10 @@ header {
   width: 100%;
   align-items: center;
 }
-header > div { 
+header > * { 
   flex: 1;
 }
-header div:nth-of-type(2) {
+header > nav {
   justify-items: end;
 }
 header ul {
@@ -104,6 +104,9 @@ img {
 }
 #form-open {
   cursor: pointer;
+}
+#form-open span {
+ font-size: small;
 }
 #form-open:hover,
 #form-open:active {
