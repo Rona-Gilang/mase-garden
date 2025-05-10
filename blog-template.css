@@ -1,3 +1,23 @@
+:root {
+  --bg-color: #ffffff;
+  --txt-color: #000000;
+  --txt-hover: #2f4f4f;
+  --bg-header: #e6e6e6;
+  --bg-main: #f2f2f2;
+  --bg-footer: #ececec;
+  --border: #808080;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #262626;
+    --txt-color: #f0f0f0;
+    --txt-hover: #b0cfcf;
+    --bg-header: #4d4d4d;
+    --bg-main: #666666;
+    --bg-footer: #595959;
+    --border: #cccccc;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -15,24 +35,25 @@ h4 { font-size: medium; }
 p, li { font-size: medium; }
 a { 
   text-decoration: none;
-  color: black;
+  color: var(--txt-color);
 }
 a:hover, 
 a:active {
   text-decoration: underline;
-  color: darkslategray;
+  color: var(--txt-hover);
 }
 body {
   font-family: "Ubuntu Sans", sans-serif;
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 header {
-  background-color: #e6e6e6ff;
+  background-color: var(--bg-header);
   padding: 10px 20px;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid var(--border);
 }
 header > div {
   display: flex;
@@ -58,25 +79,25 @@ header li {
   font-weight: 600;
 }
 main {
-  background-color: #f2f2f2ff;
-  border-bottom: 3px solid gray;
+  background-color: var(--bg-main);
+  border-bottom: 3px solid var(--border);
   padding: 15px 0 15px 0;
   margin: 0 auto;
   display: flex;
 }
 main nav {
   display: none;
-  background-color: #f2f2f2ff;
+  background-color: var(--bg-main);
   line-height: 1.2;
   width: 250px;
   max-height: 300px;
   padding: 5px;
-  border-left: 3px solid gray;
-  border-bottom: 3px solid gray;
+  border-left: 3px solid var(--border);
+  border-bottom: 3px solid var(--border);
   overflow-y: auto;
   position: fixed;
   z-index: 18;
-  top: 15%;
+  bottom: 35%;
   right: 0;
   /* transform: translateY(-50%); */
 }
@@ -103,10 +124,10 @@ main nav > ol > li:last-of-type {
   /* list-style: decimal; */
 }
 main > div {
-  background-color: #f2f2f2ff;
+  background-color: var(--bg-main);
   padding: 5px;
   writing-mode: vertical-rl;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid var(--border);
   position: fixed;
   z-index: 19;
   bottom: 10%;
@@ -120,12 +141,12 @@ main > div p {
 main > div p:hover,
 main > div p:active {
   text-decoration: underline;
-  color: darkslategray;
+  color: var(--txt-hover);
 }
 @media (min-width: 1024px) {
   main {
     padding: 15px;
-    border-left: 3px solid gray;
+    border-left: 3px solid var(--border);
   }
   main > div {
     display: none;
@@ -154,9 +175,9 @@ main > div p:active {
 }
 article {
   line-height: 1.5;
-  background-color: white;
-  border-top: 3px solid gray;
-  border-right: 3px solid gray;
+  background-color: var(--bg-color);
+  border-top: 3px solid var(--border);
+  border-right: 3px solid var(--border);
   max-width: 800px;
   width: 100%;
   padding: 15px;
@@ -175,9 +196,9 @@ article section:last-of-type {
 }
 footer {
   line-height: 1.2;
-  background-color: #ecececff;
+  background-color: var(--bg-footer);
   padding: 5px 15px;
-  border-top: 3px solid gray;
+  border-top: 3px solid var(--border);
 }
 footer p {
   text-align: center;

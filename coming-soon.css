@@ -1,3 +1,23 @@
+:root {
+  --bg-color: #ffffff;
+  --txt-color: #000000;
+  --txt-hover: #2f4f4f;
+  --bg-header: #e6e6e6;
+  --bg-main: #f2f2f2;
+  --bg-footer: #ececec;
+  --border: #808080;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #262626;
+    --txt-color: #f0f0f0;
+    --txt-hover: #b0cfcf;
+    --bg-header: #4d4d4d;
+    --bg-main: #666666;
+    --bg-footer: #595959;
+    --border: #cccccc;
+  }
+}
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -12,27 +32,28 @@ h4 { font-size: medium; }
 p, li { font-size: medium; }
 a { 
   text-decoration: none;
-  color: black;
+  color: var(--txt-color);
 }
 a:hover, 
 a:active {
   text-decoration: underline;
-  color: darkslategray;
+  color: var(--txt-hover);
 }
 html, body {
   height: 100%;
 }
 body {
   font-family: "Ubuntu Sans", sans-serif;
-  background-color: white;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 header {
-  background-color: #e6e6e6ff;
+  background-color: var(--bg-header);
   padding: 10px 20px;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid var(--border);
 }
 header > div {
   display: flex;
@@ -63,31 +84,31 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ecececff;
+  background-color: var(--bg-main);
   padding: 15px;
   gap: 15px;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid var(--border);
 }
 main > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: var(--bg-color);
   padding: 15px;
   gap: 10px;
-  border-top: 3px solid gray;
-  border-right: 3px solid gray;
-  aspect-ratio: 1 / 1;
+  border-top: 3px solid var(--border);
+  border-right: 3px solid var(--border);
+  width: 300px;
 }
-main > div > img {
+main img {
   width: 200px;
   height: auto;
 }
 footer {
   line-height: 1.2;
-  background-color: #ecececff;
+  background-color: var(--bg-footer);
   padding: 5px 15px;
-  border-top: 3px solid gray;
+  border-top: 3px solid var(--border);
 }
 footer p {
   text-align: center;
