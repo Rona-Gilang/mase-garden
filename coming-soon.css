@@ -1,31 +1,61 @@
 *, ::after, ::before {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
 }
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+h3 { font-size: large; }
+h4 { font-size: medium; }
+p, li { font-size: medium; }
+a { 
+  text-decoration: none;
+  color: black;
+}
+a:hover, 
+a:active {
+  text-decoration: underline;
+  color: darkslategray;
+}
 html, body {
   height: 100%;
+}
+body {
+  font-family: "Ubuntu Sans", sans-serif;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-}
 header {
   background-color: #e6e6e6ff;
-  border-bottom: 3px solid gray;
   padding: 10px 20px;
+  border-bottom: 3px solid gray;
 }
-header > a {
-  text-decoration: none;
-  color: black;
-  font-family: Verdana, sans-serif;
+header > div {
+  display: flex;
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+#header-pusher { 
+  flex-grow: 1;
+}
+header span {
   font-size: x-large;
   font-weight: bold;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+header li {
+  font-size: large;
+  font-weight: 600;
 }
 main {
   flex: 1;
@@ -36,7 +66,7 @@ main {
   background-color: #ecececff;
   padding: 15px;
   gap: 15px;
-  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
 }
 main > div {
   display: flex;
@@ -52,4 +82,20 @@ main > div {
 main > div > img {
   width: 200px;
   height: auto;
+}
+footer {
+  line-height: 1.2;
+  background-color: #ecececff;
+  padding: 5px 15px;
+  border-top: 3px solid gray;
+}
+footer p {
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+ footer p:last-of-type {
+  margin-bottom: 0;
+}
+.no-br {
+  white-space: nowrap;
 }
