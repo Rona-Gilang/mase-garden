@@ -60,7 +60,7 @@ header li {
 main {
   background-color: #f2f2f2ff;
   border-bottom: 3px solid gray;
-  padding: 20px;
+  padding: 15px 0 15px 0;
   margin: 0 auto;
   display: flex;
 }
@@ -71,15 +71,14 @@ main nav {
   width: 250px;
   max-height: 300px;
   padding: 5px;
-  margin-right: 20px;
   border-left: 3px solid gray;
   border-bottom: 3px solid gray;
   overflow-y: auto;
   position: fixed;
   z-index: 18;
-  top: 50%;
+  top: 15%;
   right: 0;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 main nav * {
   font-size: small;
@@ -104,15 +103,15 @@ main nav > ol > li:last-of-type {
   /* list-style: decimal; */
 }
 main > div {
-  background-color: #e6e6e6ff;
+  background-color: #f2f2f2ff;
   padding: 5px;
   writing-mode: vertical-rl;
   border-bottom: 3px solid gray;
   position: fixed;
   z-index: 19;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  bottom: 10%;
+  right: 0;
+  /* transform: translateY(-50%); */
 }
 main > div p {
   font-size: small;
