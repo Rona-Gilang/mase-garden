@@ -100,7 +100,7 @@ section {
   margin-bottom: 10px;
 }
 .section-title * {
-  display: inline-block;
+  display: inline;
 }
 .section-title span {
   font-size: small;
