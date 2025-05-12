@@ -121,7 +121,7 @@ section {
   color: var(--txt-hover);
 }
 form {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   gap: 15px;
