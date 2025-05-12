@@ -30,7 +30,10 @@ html {
 }
 h1 { font-size: xx-large; }
 h2 { font-size: x-large; }
-h3 { font-size: large; }
+h3 { font-size: medium; }
+@media (min-width: 768px) {
+  h3 { font-size: large; }
+}
 h4 { font-size: medium; }
 p, li { font-size: medium; }
 a { 
