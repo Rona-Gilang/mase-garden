@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  <link rel="alternate" hreflang="en" href="https://example.com/about.html">
+  <link rel="alternate" hreflang="id" href="https://example.com/id/about.html">
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../index.css">
+  <script src="../index.js" defer></script>
+  <title>Mas&eacute; Garden</title>
+</head>
+<!-- TO DO LIST 
+  language option
+  tab title icon
+  -->
+<body>
+  <header>
+    <div>
+      <h1>Mas&eacute; Garden</h1>
+      <div id="header-pusher"></div>
+      <nav>
+        <ul>
+          <li><a href="../">EN</a></li>
+          <li>ID</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="section-form">
+      <h2 class="section-title">Terbuka untuk Lowongan!</h2>
+      <p>
+        <span id="form-open">
+          Saya sedang mencari pekerjaan tingkat junior/pemula dalam bidang pertanian atau sektor terkait.<br>
+          Bila Anda memiliki peluang <i>atau</i> rekomendasi kepada seseorang yang mungkin memiliki peluang,
+          mohon isi <span class="no-br">formulir ini.<span class="click-more">(klik)</span></span>
+        </span>
+      </p>
+      <form id="form-offer" action="https://formspree.io/f/xvgakqar" method="POST">
+        <fieldset>
+          <div class="form-question">
+            <p>Bagaimana hendaknya saya panggil Anda?</p>
+            <div class="form-answers">
+              <input type="radio" name="Name Title" id="mr" value="Mr." required>
+              <label for="mr">Bapak</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Name Title" id="ms" value="Ms.">
+              <label for="ms">Ibu</label>
+            </div>
+          </div>
+          <div class="form-question">
+            <label for="name">Siapa nama Anda?</label>
+            <div><input type="text" name="Name Call" id="name" pattern="[A-Za-z '\-.]{1,50}" placeholder="Nama Anda" required></div>
+          </div>
+          <div class="form-question">
+            <p>Tipe usaha apa yang Anda wakili?</p>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="company" value="Company" required>
+              <label for="company">Perusahaan</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="government" value="Government Agency">
+              <label for="government">Instansi Pemerintah</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="nonprofit" value="Nonprofit Organization">
+              <label for="nonprofit">Organisasi Nonprofit</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="entrepreneur" value="Entrepreneur">
+              <label for="entrepreneur">Pengusaha</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="private" value="Private Individual/Group">
+              <label for="private">Individu/Grup Privat</label>
+            </div>
+          </div>
+          <div class="form-question">
+            <p>Termasuk dalam bidang industri apakah Anda?</p>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="agriculture" value="Agriculture" required>
+              <label for="agriculture">Pertanian</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="biotechnology" value="Biotechnology">
+              <label for="biotechnology">Bioteknologi</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="nursery" value="Plant Nursery">
+              <label for="nursery">Pembibitan Tanaman</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="forestry" value="Forestry">
+              <label for="forestry">Kehutanan</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="organic" value="Organic Practice">
+              <label for="organic">Praktik Organik</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="environment" value="Environmental Practice">
+              <label for="environment">Praktik Lingkungan</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="agroecotourism" value="Agroecotourism">
+              <label for="agroecotourism">Agroekowisata</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="other" value="Other">
+              <label for="other">Lainnya</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="fieldset-job">
+          <div class="form-question">
+            <label for="position">Posisi apa yang Anda pertimbangkan untuk saya?</label>
+            <div>
+              <select name="Position" id="position">
+                <option value="">Pilih posisi:</option>
+                <option value="Agronomist">Agronomist</option>
+                <option value="Admin">Admin</option>
+                <option value="Extension Worker">Penyuluh</option>
+                <option value="Promotion Officer">Tenaga Promosi</option>
+                <option value="Field Assistant">Asisten Lapangan</option>
+                <option value="Field Representative">Perwakilan Lapangan</option>
+                <option value="Field Staff">Staf Lapangan</option>
+                <option value="Field Officer">Petugas Lapangan</option>
+                <option value="Field Operator">Operator Lapangan</option>
+                <option value="Research Assistant">Asisten Peneliti</option>
+                <option value="Research Representative">Perwakilan Peneliti</option>
+                <option value="Research Staff">Staf Peneliti</option>
+                <option value="Research Officer">Petugas Peneliti</option>
+                <option value="Lab Assistant">Asisten Lab</option>
+                <option value="Lab Staff">Staf Lab</option>
+                <option value="Marketing Assistant">Asisten Pemasaran</option>
+                <option value="Marketing Representative">Perwakilan Pemasaran</option>
+                <option value="Sales Assistant">Asisten Sales</option>
+                <option value="Sales Representative">Perwaklan Sales</option>
+                <option value="Other">Lainnya</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-question">
+            <p>Apa saja yang akan menjadi tanggung jawab?</p>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="administration" value="Administration">
+              <label for="administration">Administrasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="analysis" value="Analysis ">
+              <label for="analysis">Analisis</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="communication" value="Communication">
+              <label for="communication">Komunikasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="coordination" value="Coordination">
+              <label for="coordination">Koordinasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="daily-operation" value="Daily Operation">
+              <label for="daily-operation">Operasi Harian</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="data-gathering" value="Data Gathering">
+              <label for="data-gathering">Pengumpulan Data</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="demonstration" value="Demonstration">
+              <label for="demonstration">Demonstrasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="documentation" value="Documentation">
+              <label for="documentation">Dokumentasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="management" value="Management">
+              <label for="management">Manajemen</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="observation" value="Observation">
+              <label for="observation">Observasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="planning" value="Planning">
+              <label for="planning">Perencanaan</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="presentation" value="Presentation">
+              <label for="presentation">Presentasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="promotion" value="Promotion">
+              <label for="promotion">Promosi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="report-writing" value="Report Writing">
+              <label for="report-writing">Penulisan Laporan</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="research" value="Research">
+              <label for="research">Penelitian</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="survey" value="Survey">
+              <label for="survey">Survei</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="others-resp" value="Others">
+              <label for="others-resp">Lainnya</label>
+            </div>
+          </div>
+          <div class="form-question">
+            <p>Nilai apa yang usaha Anda junjung?</p>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="climate-resilience" value="Climate resilience">
+              <label for="climate-resilience">Ketahanan iklim</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="ecological-biodiversity" value="Ecological biodiversity">
+              <label for="ecological-biodiversity">Keanekaragaman hayati</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="environmental-harmony" value="Environmental harmony">
+              <label for="environmental-harmony">Keselarasan lingkungan</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="ethical-farming" value="Ethical farming">
+              <label for="ethical-farming">Pertanian beretika</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="famer-dignity" value="Famer dignity">
+              <label for="famer-dignity">Martabat petani</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="food-security" value="Food security">
+              <label for="food-security">Ketahanan pangan</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="future-generations-well-being" value="Future generations&rsquo; well-being">
+              <label for="future-generations-well-being">Kesejahteraan generasi mendatang</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="knowledge-accessibility" value="Knowledge accessibility">
+              <label for="knowledge-accessibility">Akses ilmu pengetahuan</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="research-advancement" value="Research advancement">
+              <label for="research-advancement">Kemajuan penelitian</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="restoration-conservation" value="Restoration and conservation">
+              <label for="restoration-conservation">Restorasi dan konservasi</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="soil-regeneration" value="Soil regeneration">
+              <label for="soil-regeneration">Regenerasi tanah</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="sustainable-development" value="Sustainable development">
+              <label for="sustainable-development">Pembangunan berkelanjutan</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="others-value" value="Others">
+              <label for="others-value">Lainnya</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-question">
+            <label for="mail-address">Bisa berikan alamat email Anda?</label>
+            <div><input type="email" name="Email" id="mail-address" placeholder="nama@mail.com" required></div>
+          </div>
+          <div class="form-question">
+            <label for="phone-number">Boleh cantumkan nomor HP Anda?</label>
+            <div><input type="tel" name="Phone" id="phone-number" pattern="[0-9]{8,15}" placeholder="6285123456789"></div>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" class="submit-reset" value="Kirim">
+          <input type="reset" class="submit-reset" value="Hapus">
+        </div>
+      </form>
+    </section>
+    <section class="section-box">
+      <div class="section-title">
+        <a href="segera-hadir.html" target="_blank"><h2>Artikel</h2><span class="click-more">(lebih)</span></a>
+      </div>
+      <div class="section-dif">
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Artikel 1</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Artikel 2</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Artikel 3</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Artikel 4</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="section-box">
+      <div class="section-title">
+        <a href="segera-hadir.html" target="_blank"><h2>Resensi Buku</h2><span class="click-more">(lebih)</span></a>
+      </div>
+      <div class="section-dif">
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Buku 1</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Buku 2</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Buku 3</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Buku 4
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="section-box">
+      <div class="section-title">
+        <a href="segera-hadir.html" target="_blank"><h2>Esai</h2><span class="click-more">(lebih)</span></a>
+      </div>
+      <div class="section-dif">
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Agroforestri</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Burung Puyuh</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Esai 3</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Judul Esai 4</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="section-box">
+      <h2 class="section-title">Hobi</h2>
+      <div class="section-dif">
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Anime</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Game</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Foto</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="segera-hadir.html" target="_blank">
+          <div>
+            <h3>Sketsa</h3>
+            <picture>
+              <source srcset="../placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="../placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h2>Tentang Saya</h2>
+      <div>
+        <p>
+          Saya <em>Rona</em>, seseorang yang percaya bahwa dia hidup di sisi lain dunia.<br>
+          Alam dan filosofi adalah hal yang saya minati.<br>
+          Game dan anime memiliki ruang khusus di hati.<br>
+          Saya muak dengan mayoritas, popularitas, 'biasa saja', dan ketidak-mikiran.<br>
+          Ketidak sanggupan dan nihilisme telah menjadi latar belakang dalam pikiran.<br>
+          Inilah suaka untuk ciptaan dan penemuan saya.
+        </p>
+        <div>
+          <blockquote>
+            Saya tak butuh pepatah murahan, <span class="no-br">melainkan pekerjaan berharga!&rdquo;</span>
+          </blockquote>
+          <p>
+            <span class="no-br">Ditulis dalam <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>,</span>
+            <span class="no-br">digambar dengan <a href="https://inkscape.org/" target="_blank">Inkscape</a>,</span>
+            <span class="no-br">dihosting pada <a href="https://github.com/" target="_blank">GitHub</a>,</span>
+            <span class="no-br">formulir dibantu <a href="https://formspree.io/" target="_blank">Formspree</a>,</span>
+            <span class="no-br">font dari <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>,</span>
+            <span class="no-br">ikon oleh <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <p>
+            <span class="no-br"><i class="fa-regular fa-envelope"></i> ronagilang29@gmail.com | </span>
+            <span class="no-br"><a href="https://www.instagram.com/ronagilang/" target="_blank"><i class="fa-brands fa-instagram"></i> ronagilang</a> | </span>
+            <span class="no-br"><a href="https://www.linkedin.com/in/rohman-rona-g-809264117/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> Rohman Rona</a> | </span>
+            <span class="no-br"><a href="https://github.com/Rona-Gilang" target="_blank"><i class="fa-brands fa-github"></i> Rona-Gilang</a> | </span>
+            <span class="no-br"><a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i> rona_gilang</a></span>
+          </p>
+          <p>
+            &copy; 2025 Rona Gilang. Semua konten berlisensi di bawah 
+            <span class="no-br"><a href="https://creativecommons.org/licenses/by/4.0/deed.id" target="_blank">CC BY 4.0</a></span>
+            kecuali dinyatakan lain.
+          </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
