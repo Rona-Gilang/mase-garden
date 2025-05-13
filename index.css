@@ -105,18 +105,17 @@ section {
 .section-title * {
   display: inline;
 }
-.section-title span {
+.click-more {
   font-size: small;
   margin-left: 0.5em;
 }
-#form-open {
-  cursor: pointer;
+#section-form > p {
   max-width: 994px;
   width: 100%;
   margin: 0 auto 10px auto;
 }
-#form-open span {
- font-size: small;
+#form-open {
+  cursor: pointer;
 }
 #form-open:hover,
 #form-open:active {
