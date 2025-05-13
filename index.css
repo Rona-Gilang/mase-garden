@@ -193,14 +193,14 @@ fieldset {
     min-width: 994px;
   }
 }
-.section-box > div {
+.section-dif {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   align-items: end;
   max-width: 100%;
 }
-.section-box > div > a {
+.section-dif > a {
   max-width: 100%;
 }
 img {
@@ -208,14 +208,14 @@ img {
   width: 100%;
   height: auto;
 }
-.section-box > div > a {
+.section-dif > a {
   background-color: var(--bg-color);
   border-top: 3px solid var(--border);
   border-right: 3px solid var(--border);
   padding: 10px;
 }
 @media (min-width: 1024px) {
-  .section-box > div {
+  .section-dif {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
