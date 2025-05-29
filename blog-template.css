@@ -182,10 +182,15 @@ article {
   width: 100%;
   padding: 15px;
 }
-article p {
+article p,
+article ul,
+article ol,
+article dl,
+article blockquote,
+article table {
   margin-bottom: 0.5rem;
 }
-article p:last-of-type {
+.no-margin-bot {
   margin-bottom: 0;
 }
 article section {
@@ -193,6 +198,18 @@ article section {
 }
 article section:last-of-type {
   margin-bottom: 0;
+}
+article ol,
+article ul {
+  margin-left: 1.5em;
+}
+sup {
+  vertical-align: top;
+  font-weight: normal;
+  font-size: x-small;
+}
+#head-ref a {
+  text-decoration: underline;
 }
 footer {
   line-height: 1.2;
@@ -204,9 +221,15 @@ footer p {
   text-align: center;
   margin-bottom: 0.3em;
 }
- footer p:last-of-type {
+footer p:last-of-type {
   margin-bottom: 0;
 }
 .no-br {
   white-space: nowrap;
+}
+.bold-a-bit {
+  font-weight: 500;
+}
+.small-a-bit {
+  font-size: 95%;
 }

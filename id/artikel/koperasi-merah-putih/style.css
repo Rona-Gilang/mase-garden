@@ -1,0 +1,9 @@
+#head-h2c > ol {
+  font-weight: 500;
+}
+#head-h2c > ol ul {
+  font-weight: 400;
+}
+#head-h2d ul ul li {
+  font-size: 95%;
+}
