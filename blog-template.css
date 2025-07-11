@@ -187,7 +187,8 @@ article ul,
 article ol,
 article dl,
 article blockquote,
-article table {
+article table, 
+article picture {
   margin-bottom: 0.5rem;
 }
 .no-margin-bot {
@@ -210,6 +211,13 @@ sup {
 }
 #head-ref a {
   text-decoration: underline;
+}
+.book-data td {
+  vertical-align: top;
+}
+.book-cover img {
+  max-width: 100%;
+  height: auto;
 }
 footer {
   line-height: 1.2;

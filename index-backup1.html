@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="en" href="https://rona-gilang.github.io/mase-garden/">
+  <link rel="alternate" hreflang="id" href="https://rona-gilang.github.io/mase-garden/id/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index-backup1.css">
+  <script src="index.js" defer></script>
+  <title>Mas&eacute; Garden</title>
+</head>
+<!-- TO DO LIST 
+  tab title icon
+  -->
+<body>
+  <header>
+    <div>
+      <h1>Mas&eacute; Garden</h1>
+      <div id="header-pusher"></div>
+      <nav>
+        <ul>
+          <li>EN</li>
+          <li><a href="id/">ID</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="section-form">
+      <h2 class="section-title">Open for Job!</h2>
+      <p>
+        <span id="form-open">
+          I&rsquo;m looking for junior/entry-level job in agriculture or related sector.<br>
+          If you have an offer <i>or</i> recommendation to someone who may have an offer, 
+          kindly fill out <span class="no-br">this form.<span class="click-more">(click)</span></span>
+        </span>
+      </p>
+      <form id="form-offer" action="https://formspree.io/f/xvgakqar" method="POST">
+        <fieldset>
+          <div class="form-question">
+            <p>How should I address you?</p>
+            <div class="form-answers">
+              <input type="radio" name="Name Title" id="mr" value="Mr." required>
+              <label for="mr">Mr.</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Name Title" id="ms" value="Ms.">
+              <label for="ms">Ms.</label>
+            </div>
+          </div>
+          <div class="form-question">
+            <label for="name">What should I call you?</label>
+            <div><input type="text" name="Name Call" id="name" pattern="[A-Za-z '\-.]{1,50}" placeholder="Your Name" required></div>
+          </div>
+          <div class="form-question">
+            <p>Which type of entity do you represent?</p>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="company" value="Company" required>
+              <label for="company">Company</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="government" value="Government Agency">
+              <label for="government">Government Agency</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="nonprofit" value="Nonprofit Organization">
+              <label for="nonprofit">Nonprofit Organization</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="entrepreneur" value="Entrepreneur">
+              <label for="entrepreneur">Entrepreneur</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Entity" id="private" value="Private Individual/Group">
+              <label for="private">Private Individual/Group</label>
+            </div>
+          </div>
+          <div class="form-question">
+            <p>Which industry field do you belong to?</p>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="agriculture" value="Agriculture" required>
+              <label for="agriculture">Agriculture</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="biotechnology" value="Biotechnology">
+              <label for="biotechnology">Biotechnology</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="nursery" value="Plant Nursery">
+              <label for="nursery">Plant Nursery</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="forestry" value="Forestry">
+              <label for="forestry">Forestry</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="organic" value="Organic Practice">
+              <label for="organic">Organic Practice</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="environment" value="Environmental Practice">
+              <label for="environment">Environmental Practice</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="agroecotourism" value="Agroecotourism">
+              <label for="agroecotourism">Agroecotourism</label>
+            </div>
+            <div class="form-answers">
+              <input type="radio" name="Industry" id="other" value="Other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="fieldset-job">
+          <div class="form-question">
+            <label for="position">What role are you considering me for?</label>
+            <div>
+              <select name="Position" id="position">
+                <option value="">Select role:</option>
+                <option value="Agronomist">Agronomist</option>
+                <option value="Admin">Admin</option>
+                <option value="Extension Worker">Extension Worker</option>
+                <option value="Promotion Officer">Promotion Officer</option>
+                <option value="Field Assistant">Field Assistant</option>
+                <option value="Field Representative">Field Representative</option>
+                <option value="Field Staff">Field Staff</option>
+                <option value="Field Officer">Field Officer</option>
+                <option value="Field Operator">Field Operator</option>
+                <option value="Research Assistant">Research Assistant</option>
+                <option value="Research Representative">Research Representative</option>
+                <option value="Research Staff">Research Staff</option>
+                <option value="Research Officer">Research Officer</option>
+                <option value="Lab Assistant">Lab Assistant</option>
+                <option value="Lab Staff">Lab Staff</option>
+                <option value="Marketing Assistant">Marketing Assistant</option>
+                <option value="Marketing Representative">Marketing Representative</option>
+                <option value="Sales Assistant">Sales Assistant</option>
+                <option value="Sales Representative">Sales Representative</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-question">
+            <p>What would be the responsibilities?</p>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="administration" value="Administration">
+              <label for="administration">Administration</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="analysis" value="Analysis ">
+              <label for="analysis">Analysis</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="communication" value="Communication">
+              <label for="communication">Communication</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="coordination" value="Coordination">
+              <label for="coordination">Coordination</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="daily-operation" value="Daily Operation">
+              <label for="daily-operation">Daily Operation</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="data-gathering" value="Data Gathering">
+              <label for="data-gathering">Data Gathering</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="demonstration" value="Demonstration">
+              <label for="demonstration">Demonstration</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="documentation" value="Documentation">
+              <label for="documentation">Documentation</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="management" value="Management">
+              <label for="management">Management</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="observation" value="Observation">
+              <label for="observation">Observation</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="planning" value="Planning">
+              <label for="planning">Planning</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="presentation" value="Presentation">
+              <label for="presentation">Presentation</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="promotion" value="Promotion">
+              <label for="promotion">Promotion</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="report-writing" value="Report Writing">
+              <label for="report-writing">Report Writing</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="research" value="Research">
+              <label for="research">Research</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="survey" value="Survey">
+              <label for="survey">Survey</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Responsibilities[]" id="others-resp" value="Others">
+              <label for="others-resp">Others</label>
+            </div>
+          </div>
+          <div class="form-question">
+            <p>What values does your entity uphold?</p>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="climate-resilience" value="Climate resilience">
+              <label for="climate-resilience">Climate resilience</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="ecological-biodiversity" value="Ecological biodiversity">
+              <label for="ecological-biodiversity">Ecological biodiversity</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="environmental-harmony" value="Environmental harmony">
+              <label for="environmental-harmony">Environmental harmony</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="ethical-farming" value="Ethical farming">
+              <label for="ethical-farming">Ethical farming</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="famer-dignity" value="Famer dignity">
+              <label for="famer-dignity">Famer dignity</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="food-security" value="Food security">
+              <label for="food-security">Food security</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="future-generations-well-being" value="Future generations&rsquo; well-being">
+              <label for="future-generations-well-being">Future generations&rsquo; well-being</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="knowledge-accessibility" value="Knowledge accessibility">
+              <label for="knowledge-accessibility">Knowledge accessibility</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="research-advancement" value="Research advancement">
+              <label for="research-advancement">Research advancement</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="restoration-conservation" value="Restoration and conservation">
+              <label for="restoration-conservation">Restoration and conservation</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="soil-regeneration" value="Soil regeneration">
+              <label for="soil-regeneration">Soil regeneration</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="sustainable-development" value="Sustainable development">
+              <label for="sustainable-development">Sustainable development</label>
+            </div>
+            <div class="form-answers">
+              <input type="checkbox" name="Core Values[]" id="others-value" value="Others">
+              <label for="others-value">Others</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-question">
+            <label for="mail-address">Could you provide your email address?</label>
+            <div><input type="email" name="Email" id="mail-address" placeholder="name@mail.com" required></div>
+          </div>
+          <div class="form-question">
+            <label for="phone-number">May I have your phone number?</label>
+            <div><input type="tel" name="Phone" id="phone-number" pattern="[0-9]{8,15}" placeholder="6285123456789"></div>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" class="submit-reset" value="Submit">
+          <input type="reset" class="submit-reset" value="Reset">
+        </div>
+      </form>
+    </section>
+    <section class="section-box">
+      <div class="section-title">
+        <a href="en/coming-soon.html" target="_blank"><h2>Articles</h2><span class="click-more">(more)</span></a>
+      </div>
+      <div class="section-dif">
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Article Title 1</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Article Title 2</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/article/the-hidden-world-of-forest-ecosystems/" target="_blank">
+          <div>
+            <h3>The Hidden World of Forest Ecosystems</h3>
+            <picture>
+              <source srcset="en/article/the-hidden-world-of-forest-ecosystems/cover-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="en/article/the-hidden-world-of-forest-ecosystems/cover.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Article Title 4</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="section-box">
+      <div class="section-title">
+        <a href="en/coming-soon.html" target="_blank"><h2>Book Reviews</h2><span class="click-more">(more)</span></a>
+      </div>
+      <div class="section-dif">
+        <a href="en/book-review/the-state-of-the-world-forest-2024-fao/" target="_blank">
+          <div>
+            <h3>The State of The World&rsquo;s Forest (FAO, 2024)</h3>
+            <picture>
+              <source srcset="en/book-review/the-state-of-the-world-forest-2024-fao/the-state-of-the-world-forest-2024-fao-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="en/book-review/the-state-of-the-world-forest-2024-fao/the-state-of-the-world-forest-2024-fao-light.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Book Title 2</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Book Title 3</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Book Title 4</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="section-box">
+      <div class="section-title">
+        <a href="en/coming-soon.html" target="_blank"><h2>Essays</h2><span class="click-more">(more)</span></a>
+      </div>
+      <div class="section-dif">
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Essay Title 1</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Essay Title 2</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Essay Title 3</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Essay Title 4</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="section-box">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="section-dif">
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Anime</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Game</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Photo</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+        <a href="en/coming-soon.html" target="_blank">
+          <div>
+            <h3>Sketch</h3>
+            <picture>
+              <source srcset="placeholder2-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="placeholder2.png">
+            </picture>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h2>About Me</h2>
+      <div>
+        <p>
+          I'm <strong>Rona</strong>, a man who believes he lives on the other side of the world.<br>
+          Nature and philosophy are what spark my interest.<br>
+          Games and anime hold a special place in my heart.<br>
+          I despise majority, mainstream, mediocre, and mindlessness.<br>
+          Despair and nihilism have become a backyard in my mind.<br>
+          Here is a sanctuary for my creations and discoveries.
+        </p>
+        <div>
+          <blockquote>
+            &ldquo;I don&rsquo;t need cheap quote, <span class="no-br">I need worthy job!&rdquo;</span>
+          </blockquote>
+          <p>
+            <span class="no-br">Written in <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>,</span>
+            <span class="no-br">drawn using <a href="https://inkscape.org/" target="_blank">Inkscape</a>,</span>
+            <span class="no-br">hosted on <a href="https://github.com/" target="_blank">GitHub</a>,</span>
+            <span class="no-br">forms powered by <a href="https://formspree.io/" target="_blank">Formspree</a>,</span>
+            <span class="no-br">fonts from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>,</span>
+            <span class="no-br">icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <p>
+            <span class="no-br"><i class="fa-regular fa-envelope"></i> ronagilang29@gmail.com | </span>
+            <span class="no-br"><a href="https://www.instagram.com/ronagilang/" target="_blank"><i class="fa-brands fa-instagram"></i> ronagilang</a> | </span>
+            <span class="no-br"><a href="https://www.linkedin.com/in/rohman-rona-g-809264117/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> Rohman Rona</a> | </span>
+            <span class="no-br"><a href="https://github.com/Rona-Gilang" target="_blank"><i class="fa-brands fa-github"></i> Rona-Gilang</a> | </span>
+            <span class="no-br"><a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i> rona_gilang</a></span>
+          </p>
+          <p>
+            &copy; 2025 Rona Gilang. All contents are licensed under
+            <span class="no-br"><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></span>
+            unless stated otherwise.
+          </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
