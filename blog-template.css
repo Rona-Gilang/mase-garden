@@ -121,7 +121,6 @@ main nav > ol > li:last-of-type {
 }
 .toc-sub li {
   margin: 0;
-  /* list-style: decimal; */
 }
 main > div {
   background-color: var(--bg-main);
@@ -215,9 +214,15 @@ sup {
 .book-data td {
   vertical-align: top;
 }
+.book-cover {
+  line-height: 1;
+}
 .book-cover img {
   max-width: 100%;
   height: auto;
+}
+.book-cover figcaption {
+  font-size: small;
 }
 footer {
   line-height: 1.2;

@@ -213,8 +213,10 @@ img {
   display: flex;
   gap: 10px;
 }
-.section-dif > a:nth-of-type(5),
-.section-dif > a:nth-of-type(6) {
+.section-dif > a h3 {
+  margin-bottom: 4px;
+}
+.section-dif > a:nth-of-type(3) {
   display: none;
 }
 .section-dif > a > :nth-child(1) {
@@ -227,14 +229,13 @@ img {
   .section-dif {
     grid-template-columns: 1fr 1fr;
   }
-  .section-dif > a:nth-of-type(5),
-  .section-dif > a:nth-of-type(6) {
-    display: flex;
-  }
 }
 @media (min-width: 1024px) {
   .section-dif {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-dif > a:nth-of-type(3) {
+    display: flex;
   }
 }
 @media (min-width: 1440px) {
