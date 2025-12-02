@@ -207,7 +207,8 @@ sup {
   font-size: x-small;
 }
 table {
-  border-collapse: collapse;
+  overflow-x: auto;
+  max-width: 100%;
 }
 th {
   font-weight: normal;
@@ -230,6 +231,9 @@ td {
 }
 .table-colon td {
   padding-right: 0.5em;
+}
+.table-figure {
+  border-collapse: collapse;
 }
 .table-figure td {
   text-align: center;
