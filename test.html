@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Font Size Keywords</title>
-  <!-- 
-  <link rel="icon" href="path/to/your/favicon.svg" type="image/x-icon">   .ico
-  <link rel="icon" href="path/to/your/favicon.svg" type="image/png">      .png
-  <link rel="icon" href="path/to/your/favicon.svg" type="image/svg+xml">  .svg
-  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="alternate" hreflang="en" href="https://example.com/about.html">
+  <link rel="alternate" hreflang="id" href="https://example.com/id/about.html"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="blog-template2.css">
+  <!-- <script src="../../../../blog-template.js" defer></script> -->
+  <title>Testing 1</title>
 </head>
 <body>
-  <p>
-    &lsquo; Left single quotation mark, <br>
-    &rsquo; Right single quotation mark, <br>
-    &ldquo; Left double quotation mark, <br>
-    &rdquo; Right double quotation mark.
-  </p>
-  <p>
-    &gt; greater than<br>
-    &lt; less than<br>
-    &ge; greater or equal<br>
-    &le; less or equal<br>
-    &ne; not equal
-  </p>
-  <ul>
-    <li>&frac12; 1/2</li>
-    <li>&frac14; 1/4</li>
-    <li>&frac34; 3/4</li>
-    <li>etc. (see code suggestion)</li>
-  </ul>
-  <p>
-    Bla bla bla bla bla<br>
-    Bla bla bla<sup style="vertical-align: super;">super</sup> bla bla<br>
-    Bla bla bla<sup style="vertical-align: text-top;">text-top</sup> bla bla<br>
-    Bla bla bla<sup style="vertical-align: top;">top</sup> bla bla<br>
-    Bla bla bla bla bla.
-  </p>
-  <p>
-    Up arrow: &uarr;<br>
-    Down arrow: &darr;<br>
-    Left arrow: &larr;<br>
-    Right arrow: &rarr;
-  </p>
-  <p>
-    &nbsp; for space.
-  </p>
-  <p>
-    Next/New, Prev/Old<br>
-    Lanjut/Baru, Sebelum/Lama
-  </p>
-  <p>
-    Book type:
-    <br>text-book, academic, practical, research-report, fiction
-  </p>
-  <p>
-    Citation Rule: <a href="https://utahtech.libguides.com/c.php?g=57887&p=9585378" target="_blank">https://utahtech.libguides.com/c.php?g=57887&p=9585378</a>
-  </p>
+  <header>
+    <div>
+      <div>
+        <a href="../../../"><span>Mas&eacute; Garden</span></a>
+      </div>
+      <div id="header-pusher"></div>
+      <nav>
+        <ul>
+          <li>EN</li>
+          <!-- <li>ID</li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <h1>Big Title</h1>
+      <section>
+        <h2>Little Title</h2>
+        <p>Some paragraphs...</p>
+        <table>
+          <tr>
+            <th>Column 1 with very very very very very very very very very very very very very very very very very very very very long text</th>
+            <th>Column 2</th>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </table>
+        <div>
+          <p>Pengelompokan jalan: <sup>[p19]</sup></p>
+          <div class="table-wrap">
+            <table>
+              <tr>
+                <th>Kelas</th>
+                <th>Tipe</th>
+                <th>Lebar</th>
+                <th>Panjang</th>
+                <th>Tinggi</th>
+                <th>Muatan</th>
+              </tr>
+              <tr>
+                <td>I</td>
+                <td>arteri, kolektor</td>
+                <td>&le;2,5m</td>
+                <td>&le;18m</td>
+                <td>&le;4,2m</td>
+                <td>&le;10ton</td>
+              </tr>
+              <tr>
+                <td>II</td>
+                <td>arteri, kolektor, lokal, lingkungan</td>
+                <td>&le;2,5m</td>
+                <td>&le;12m</td>
+                <td>&le;4,2m</td>
+                <td>&le;8ton</td>
+              </tr>
+              <tr>
+                <td>III</td>
+                <td>arteri, kolektor, lokal, lingkungan</td>
+                <td>&le;2,1m</td>
+                <td>&le;9m</td>
+                <td>&le;3,5m</td>
+                <td>&le;8ton</td>
+              </tr>
+              <tr>
+                <td>Khusus</td>
+                <td>arteri</td>
+                <td>&gt;2,5m</td>
+                <td>&gt;18m</td>
+                <td>&le;4,2m</td>
+                <td>&gt;10ton</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
 </body>
 </html>

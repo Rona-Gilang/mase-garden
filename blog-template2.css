@@ -83,6 +83,10 @@ main {
   border-bottom: 3px solid var(--border);
   padding: 15px 0 15px 0;
   margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  overflow-x: hidden;
   display: flex;
 }
 main nav {
@@ -146,6 +150,8 @@ main > div p:active {
   main {
     padding: 15px;
     border-left: 3px solid var(--border);
+    width: auto;
+    max-width: fit-content;
   }
   main > div {
     display: none;
@@ -177,9 +183,11 @@ article {
   background-color: var(--bg-color);
   border-top: 3px solid var(--border);
   border-right: 3px solid var(--border);
-  max-width: 800px;
   width: 100%;
+  max-width: 800px;
+  min-width: 0;
   padding: 15px;
+  flex: 0 1 auto; /*for shrink behavior*/
 }
 article > * {
   margin-bottom: 1.2rem;
@@ -198,6 +206,10 @@ article ol,
 article ul {
   margin-left: 1.5em;
 }
+article div {
+  overflow-x: auto;
+  max-width: 100%;
+}
 figure {
   line-height: 1;
 }
@@ -207,8 +219,11 @@ sup {
   font-size: x-small;
 }
 table {
-  overflow-x: auto;
-  max-width: 100%;
+  border-collapse: collapse;
+}
+table img {
+  height: 8em;
+  width: auto;
 }
 th {
   font-weight: normal;
@@ -232,24 +247,14 @@ td {
 .table-colon td {
   padding-right: 0.5em;
 }
-.table-figure {
-  border-collapse: collapse;
-}
 .table-figure td {
   text-align: center;
-  vertical-align: bottom;
-  padding: 0.3em 2em 0.3em 0;
+  padding: 0.3em 1.5em 0.3em 0;
   border-top: 1px solid var(--txt-color);
   border-bottom: 1px solid var(--txt-color);
 }
 td:last-child {
   padding-right: 0;
-}
-.table-figure img {
-  max-width: 100%;
-  max-height: 10em;
-  width: auto;
-  height: auto;
 }
 footer {
   line-height: 1.2;
@@ -272,4 +277,7 @@ footer p:last-of-type {
 }
 .small-a-bit {
   font-size: 95%;
+}
+.break-17ch {
+  min-width: 17ch;
 }

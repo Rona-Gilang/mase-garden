@@ -1,0 +1,11 @@
+/*for table to overflow in our blog template ---------------------*/
+.table-wrap { /*for tables that is too wide to be wrapped normally*/
+  overflow-x: auto;
+  max-width: 100%;
+  display: block;
+}
+.table-wrap table {
+  width: max-content;
+  white-space: nowrap;
+}
+/*----------------------------------------------------------------*/

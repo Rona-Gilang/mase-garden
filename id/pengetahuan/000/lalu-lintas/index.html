@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../../../../blog-template2.css">
-  <title>Kendaraan dan Lalu Lintas</title>
+  <script src="../../../../blog-template.js" defer></script>
+  <title>Lalu Lintas</title>
 </head>
 <body>
   <header>
@@ -28,17 +29,38 @@
     </div>
   </header>
   <main>
+    <div id="toc-toggle">
+      <p>Daftar Isi</p>
+    </div>
+    <nav id="toc">
+      <h2>Daftar Isi</h2>
+      <ol>
+        <!-- <li><a href="#head-0">Lalu Lintas</a></li> -->
+        <li><a href="#head-1">Lalu Lintas dan Angkutan Jalan</a></li>
+        <li><a href="#head-2">Rambu Lalu Lintas</a></li>
+        <li><a href="#head-3">Marka Jalan</a></li>
+        <!-- <li><a href="#head-ref">Daftar Rujukan</a></li> -->
+      </ol>
+    </nav>
     <article>
-      <h1>Kendaraan dan Lalu Lintas</h1>
-      <section>
+      <h1 id="head-0">Lalu Lintas</h1>
+      <section id="head-1">
         <h2>Lalu Lintas dan Angkutan Jalan</h2>
         <p>
           Undang-Undang Republik Indonesia nomor 22 tahun 2009
           tentang <em>Lalu Lintas dan Angkutan Jalan</em>.
         </p>
-        <div>
+        <div class="table-wrap">
           <p>Pengelompokan jalan: <sup>[p19]</sup></p>
           <table>
+            <colgroup>
+              <col>
+              <col class="break-17ch">
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
             <tr>
               <th>Kelas</th>
               <th>Tipe</th>
@@ -363,7 +385,7 @@
           Benda sitaan yang lewat satu tahun dan belum diketahui pemiliknya dapat dilelang untuk negara. <sup>[p271]</sup>
         </p>
       </section>
-      <section>
+      <section id="head-2">
         <h2>Rambu Lalu Lintas</h2>
         <p>
           Peraturan Menteri Perhubungan Republik Indonesia nomor PM 13 tahun 2014
@@ -542,6 +564,43 @@
         <p>
           Penulisan huruf, angka, dan simbol semua jenis rambu menggunakan font <em>Clearview Highway</em>. <sup>[t2-B2, t3-B2, t4-B2, t5-B2]</sup>
         </p>
+      </section>
+      <section id="head-3">
+        <h2>Marka Jalan</h2>
+        <p>
+          Peraturan Menteri Perhubungan Republik Indonesia nomor PM 34 tahun 2014
+          tentang <em>Marka Jalan</em>.
+          <br>Peraturan Menteri Perhubungan Republik Indonesia nomor PM 67 tahun 2018
+          tentang Perubahan atas Peraturan Menteri Perhubungan nomor PM 34 tahun 2014
+          tentang <em>Marka Jalan</em>.
+        </p>
+        <p>
+          Marka jalan adalah suatu tanda yang berada di permukaan jalan atau di atas permukaan jalan
+          yang meliputi <em>peralatan atau tanda</em> yang membentuk garis membujur, garis melintang, 
+          garis serong, serta lambang yang berfungsi untuk mengarahkan arus lalu lintas dan membatasi 
+          daerah kepentingan lalu lintas. <sup>[p1]</sup>
+        </p>
+        <div>
+          <p>Marka jalan memiliki warna: <sup>[p4]</sup></p>
+          <table class="table-colon">
+            <tr>
+              <th>Putih</th><td>:</td>
+              <td>perintah atau larangan</td>
+            </tr>
+            <tr>
+              <th>Kuning</th><td>:</td>
+              <td>dilarang berhenti</td>
+            </tr>
+            <tr>
+              <th>Merah</th><td>:</td>
+              <td>keperluan/tanda khusus</td>
+            </tr>
+            <tr>
+              <th>Hijau & coklat</th><td>:</td>
+              <td>daerah kepentingan khusus (dilengkapi dengan rambu/petunjuk)</td>
+            </tr>
+          </table>
+        </div>
       </section>
     </article>
   </main>
