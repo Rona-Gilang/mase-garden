@@ -221,22 +221,22 @@ sup {
 table {
   border-collapse: collapse;
 }
-/* table img {
-  height: 8em;
-  width: auto;
-} */
 th {
   font-weight: normal;
   text-align: left;
   vertical-align: top;
+  white-space: nowrap;
   padding-right: 1em;
   border-bottom: 1px solid var(--txt-color);
 }
 .table-colon th {
   padding-right: 0.5em;
   border-bottom: none;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
+/* .table-figure th {
+  white-space: nowrap;
+} */
 th:last-child {
   padding-right: 0;
 }
@@ -277,4 +277,7 @@ footer p:last-of-type {
 }
 .small-a-bit {
   font-size: 95%;
+}
+.p-0 {
+  margin-bottom: 0;
 }
