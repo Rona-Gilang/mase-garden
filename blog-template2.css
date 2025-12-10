@@ -221,10 +221,10 @@ sup {
 table {
   border-collapse: collapse;
 }
-table img {
+/* table img {
   height: 8em;
   width: auto;
-}
+} */
 th {
   font-weight: normal;
   text-align: left;
