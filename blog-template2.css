@@ -232,11 +232,7 @@ th {
 .table-colon th {
   padding-right: 0.5em;
   border-bottom: none;
-  /* white-space: nowrap; */
 }
-/* .table-figure th {
-  white-space: nowrap;
-} */
 th:last-child {
   padding-right: 0;
 }
@@ -255,6 +251,39 @@ td {
 }
 td:last-child {
   padding-right: 0;
+}
+.imgpop {
+  cursor: zoom-in;
+}
+#viewer {
+  all: unset;
+  position: fixed;
+  inset: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#viewer::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+#viewer img {
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: zoom-out;
+  user-select: none;
+}
+#viewer[open] img {
+  animation: zoomIn 0.2s ease;
+}
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+#viewer:not([open]) {
+  display: none;
 }
 footer {
   line-height: 1.2;

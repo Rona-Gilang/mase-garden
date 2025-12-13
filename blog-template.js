@@ -9,3 +9,17 @@ document.getElementById('toc-toggle').addEventListener('click', function() {
   form.style.display = (form.style.display === 'block') ? 'none' : 'block';
   // On click check form style display, if block change to none, else change to block. 
 });
+
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewer-img");
+
+document.querySelectorAll(".imgpop").forEach(img => {
+  img.onclick = () => {
+    viewerImg.src = img.src;
+    viewer.showModal();
+  };
+});
+
+viewer.addEventListener("click", () => {
+  viewer.close();
+});
