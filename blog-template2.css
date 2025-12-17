@@ -84,12 +84,9 @@ main {
   padding: 15px 0 15px 0;
   margin: 0 auto;
   width: 100%;
-  max-width: none;
-  min-width: 0;
-  overflow-x: hidden;
   display: flex;
 }
-main nav {
+#toc {
   display: none;
   background-color: var(--bg-main);
   line-height: 1.2;
@@ -103,7 +100,6 @@ main nav {
   z-index: 18;
   bottom: 35%;
   right: 0;
-  /* transform: translateY(-50%); */
 }
 main nav * {
   font-size: small;
@@ -135,7 +131,6 @@ main > div {
   z-index: 19;
   bottom: 10%;
   right: 0;
-  /* transform: translateY(-50%); */
 }
 main > div p {
   font-size: small;
@@ -156,20 +151,15 @@ main > div p:active {
   main > div {
     display: none;
   }
-  main nav {
+  #toc {
     display: block;
     position: sticky;
     top: 3rem;
-    align-self: start;
-    max-height: none;
+    align-self: flex-start;
+    width: 250px; /**/
     padding: 15px 15px 15px 0;
     margin: 15px 0 0 0;
     border: none;
-    overflow-y: auto;
-    z-index: auto;
-    top: 0px;
-    right: auto;
-    transform: none;
   }
   main nav * {
     font-size: medium;
@@ -187,7 +177,8 @@ article {
   max-width: 800px;
   min-width: 0;
   padding: 15px;
-  flex: 0 1 auto; /*for shrink behavior*/
+  margin-inline: auto;
+  flex: 0 1 auto;
 }
 article > * {
   margin-bottom: 1.2rem;
@@ -201,6 +192,9 @@ article > :last-child {
 }
 article > section > * {
   margin-bottom: 1.2rem;
+}
+article a {
+  color: var(--txt-hover);
 }
 article ol,
 article ul {
