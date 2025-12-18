@@ -50,12 +50,12 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-header {
+body > header {
   background-color: var(--bg-header);
   padding: 10px 20px;
   border-bottom: 3px solid var(--border);
 }
-header > div {
+body > header > div {
   display: flex;
   max-width: 950px;
   width: 100%;
@@ -64,17 +64,17 @@ header > div {
 #header-pusher { 
   flex-grow: 1;
 }
-header span {
+body > header span {
   font-size: x-large;
   font-weight: bold;
 }
-header ul {
+body > header ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
-header li {
+body > header li {
   font-size: large;
   font-weight: 600;
 }
@@ -203,6 +203,9 @@ article ul {
 article div {
   overflow-x: auto;
   max-width: 100%;
+}
+address {
+  display: inline;
 }
 figure {
   line-height: 1;
